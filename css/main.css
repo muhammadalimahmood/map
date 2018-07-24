@@ -1,0 +1,130 @@
+#map {
+    height: 100%;
+    /* width:1400px; */
+    /* margin: auto; */
+}
+  /* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    font-size: 12px;
+}
+
+#listing {
+    position: absolute;
+    width: 200px;
+    height: 470px;
+    overflow: auto;
+    left: 442px;
+    top: 0px;
+    cursor: pointer;
+    overflow-x: hidden;
+}
+
+#countries-container {
+    top:45px;
+    left: 10px;
+    z-index: 10;
+    position: absolute;
+}
+
+
+.style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.style-3::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.style-3::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+
+/*select {*/
+/*   -webkit-appearance: button;*/
+/*   -webkit-border-radius: 2px;*/
+/*   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);*/
+/*   -webkit-padding-end: 20px;*/
+/*   -webkit-padding-start: 2px;*/
+/*   -webkit-user-select: none;*/
+/*   background-position: 97% center;*/
+/*   color: #555;*/
+/*   font-size: inherit;*/
+/*   margin-top: 3px;*/
+/*   overflow: hidden;*/
+/*   padding: 5px 10px;*/
+/*   text-overflow: ellipsis;*/
+/*   white-space: nowrap;*/
+/*   width: 300px;*/
+/*}*/
+
+.selectdiv {
+  position: relative;
+  /*Don't really need this just for demo styling*/
+  
+  float: left;
+  min-width: 300px;
+  /*margin: 50px 33%;*/
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+display: none;
+}
+
+.selectdiv:after {
+  content: '<>';
+  font: 16px "Consolas", monospace;
+  color: #555;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 11px;
+  /*Adjust for position however you want*/
+  
+  top: 11px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #999;
+  /*left line */
+  
+  position: absolute;
+  pointer-events: none;
+}
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+  
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 34px;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 16px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #555;
+  background-color: #ffffff;
+  background-image: none;
+  -ms-word-break: normal;
+  word-break: normal;
+  border-radius: 2px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  transition:box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
